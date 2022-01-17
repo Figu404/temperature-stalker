@@ -18,7 +18,7 @@ try:
 		if result.is_valid():
 			if result.temperature > 22:
 				subprocess.run(["alert", "You are to hot for me! please leave..... it is like " + str(result.temperature) + "Degrees"])
-			elif result.temperature < 21:
+			elif result.temperature < 21.6:
 				subprocess.run(["alert", "You need to buy a scarf for yourself...... it is to coold"])
 
 		time.sleep(6)
